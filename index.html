@@ -17,7 +17,7 @@
     </head>
     <body>
         <nav>
-            <ul>
+            <ul class="pc-nav">
                 <li class="child-nav"><a href="#">Sản phẩm <i class="glyphicon glyphicon-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
                     <ul>
                         <li><a href="#">Ôtô Vinfast</a></li>
@@ -35,6 +35,47 @@
                 <li><img class="logoVinFast" src="LogoVinfast/logo.png" alt="Logo"></li>
                 <li><a href="#">Hệ thống phân phối</a></li>
                 <li><a href="#">Về chúng tôi</a></li>
+            </ul>
+            <ul class="mb-nav">
+                <li><img src="LogoVinfast/logoEdit.png"/></li>
+                <li>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="height: 46px; background-color: black; font-size: 14px !important; padding: 0 !important; border: none;"><a><i class="glyphicon glyphicon-th-list"></i></a></button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Danh mục</h4>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li><a href="#">Sản phẩm <i class="glyphicon glyphicon-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                                        <ul>
+                                            <li><a href="#">Ôtô Vinfast</a></li>
+                                            <li><a href="#">Xe máy điện Vinfast</a></li>
+                                            <li><a href="#">Ôtô Chervolet</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Tin tức <i class="glyphicon glyphicon-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                                        <ul>
+                                            <li><a href="#">Tin trong nước</a></li>
+                                            <li><a href="#">Tin nước ngoài</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                    <li><a href="#">Hệ thống phân phối</a></li>
+                                    <li><a href="#">Về chúng tôi</a></li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
         <div>
