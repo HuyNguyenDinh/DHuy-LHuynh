@@ -81,23 +81,18 @@ nav ul li a:hover {
 .child-nav ul {
     display: none;
     position: absolute;
-    z-index: 1;
     background-color: black;
 }
 
 .child-nav:hover ul {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 .logoVinFast {
     height: 46px !important;
     padding: 5px 10px !important;
-}
-
-#myCarousel {
-    width: 85% !important;
-    margin: 0 auto;
 }
 
 .carousel-inner div {
@@ -109,21 +104,22 @@ nav ul li a:hover {
 footer {
     background-color: #f7f7f7;
     text-transform: none;
-}
-h5 {
+    overflow: auto;
 }
 .footer {
-    width: 70%;
+    width: 100%;
     height: auto;
-    padding: 50px 0;
+    padding: 50px 10px;
     color: #000000;
     display: flex;
     margin: 0 auto;
     font-size: 14px;
-    
+    justify-content: space-between;
+    overflow: auto;
 }
 .the-footer {
     width: 20%;
+    overflow: auto;
 }
 
 .the-footer ul li {
