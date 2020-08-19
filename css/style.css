@@ -1,5 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 nav .mb-nav {
@@ -102,4 +103,38 @@ nav ul li a:hover {
 .carousel-inner div {
     align-items: center;
     width: 100% !important;
+}
+
+/* CSS Footer */
+footer {
+    background-color: #f7f7f7;
+    text-transform: none;
+}
+h5 {
+}
+.footer {
+    width: 70%;
+    height: auto;
+    padding: 50px 0;
+    color: #000000;
+    display: flex;
+    margin: 0 auto;
+    font-size: 14px;
+    
+}
+.the-footer {
+    width: 20%;
+}
+
+.the-footer ul li {
+    list-style-type: none;
+}
+
+.the-footer ul li a {
+    color: #000000;
+}
+
+.the-footer ul li a:hover {
+    color: rgba(170, 32, 32, 0.5);
+    text-decoration: none;
 }
