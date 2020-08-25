@@ -48,7 +48,7 @@ nav {
     margin: 0;
     padding: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
     position: fixed;
     left: 0;
     top: 0;
@@ -345,5 +345,46 @@ footer ul {
 
 .the-footer ul li a:hover {
     color: rgba(170, 32, 32, 0.5);
+    text-decoration: none;
+}
+
+/*car.html css*/
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tab div {
+    width: 30%;
+    padding: 2%;
+    margin: 1%
+}
+
+.tab div:hover {
+    border: 1px solid grey;
+    border-radius: 5%;
+}
+
+.tab div img {
+    width: 100%;
+}
+
+.tab div figcaption {
+    padding: 10px;
+}
+
+.tab div figcaption h4 {
+    text-align: center;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.tab a {
+    text-decoration: none;
+    color: black;
+}
+
+.tab a:hover {
     text-decoration: none;
 }
