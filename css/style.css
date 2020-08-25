@@ -202,9 +202,30 @@ section > div {
     position: relative;
 }
 
-.news img:hover {
-   opacity: 1;
-   transform: scale(1.0,0.95)
+.news-left div figure img {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: 0.8s ease-in-out;
+    overflow: hidden;
+}
+
+.news-left div figure img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.news-right img {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: 0.8s ease-in-out;
+    overflow: hidden;
+}
+
+.news-right img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .news-left {
@@ -222,6 +243,7 @@ section > div {
     width: 90%;
     height: auto;
     padding-top: 30px;
+    overflow: hidden;
 }
 
 .news .news-right img {
@@ -275,6 +297,7 @@ section > div {
     width: 100%;
     height: 100%;
 }
+
 .main-showroom {
     position: relative;
     width: 100%;
@@ -301,7 +324,7 @@ section > div {
 }
 
 .middle-showroom {
-    width: 45%;
+    width: 70%;
     margin: 0 auto;
 }
 
