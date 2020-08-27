@@ -556,11 +556,130 @@ footer ul {
     font-weight: bolder;
 }
 
-.tab a {
+.tab a, .infor a {
     text-decoration: none;
     color: black;
+    transition: ease 0.3s;
 }
 
-.tab a:hover {
+.tab a:hover, .infor a:hover {
     text-decoration: none;
+    color: green;
+}
+
+/*css lux-a2.html*/
+
+.infor {
+    display: flex;
+    width: 100%;
+    padding: 50px;
+}
+
+.imag {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    padding: 0% 1%;
+}
+
+.imag img {
+    width: 100%;
+}
+
+.imag .main-imag {
+    width: 100%;
+}
+
+
+.imag .thumb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imag .thumb .thumbnail {
+    width: 20%;
+    padding: 1%;
+    margin: 2%;
+    border: 1px solid gray;
+}
+.imag .thumb .thumbnail:hover {
+    border: 1px solid green;
+}
+.description {
+    width: 60%;
+    padding: 0% 1%;
+    margin: 2%;
+}
+
+.description h3 {
+    text-align: center;
+    background-color: lightblue;
+    color: red;
+    padding: 24px 26px;
+    font-weight: bolder;
+}
+
+.description ul {
+    list-style-type: square;
+    padding: 10px 20px;
+    display: none;
+    font-size: large;
+}
+
+.description .kt {
+    display: block;
+}
+
+.description div {
+    width: 100%;
+    position: inherit;
+}
+
+.but {
+    position: absolute;
+    display: flex;
+    border: 1px groove;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.but .but1 {
+    width: 20%;
+    padding: 14px 16px; 
+    text-align: center;
+    background-color: lightblue;
+    border: none;
+    outline: none;
+    color: red;
+    transition: ease 0.2s;
+}
+
+.but .but1[value] {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.but .but1:hover {
+    background-color: lightskyblue;
+}
+
+.but .but1:first-child {
+    background-color: lightskyblue;
+}
+
+.bot h3 {
+    text-align: center;
+}
+
+.ex {
+    position: relative;
+    margin-top: 50px;
+    padding: 50px 20px 0px;
+}
+
+.middle-showroom h4 {
+    font-weight: bolder;
+    font-size: large;
 }
