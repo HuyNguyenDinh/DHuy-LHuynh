@@ -38,8 +38,6 @@ nav .mb-nav {
     }
 }
 
-
-
 body {
     font-size: 100%;
     font-weight: bolder;
@@ -181,10 +179,11 @@ section {
 /* CSS News */
 .news {
     width: 100%;
-    height: 700px;
+    height: 55rem;
     margin: 0 auto;
     padding: 50px;
     position: relative;
+    max-width: 120rem;
 }
 
 .news-left div figure img {
@@ -247,7 +246,6 @@ section {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: 2px solid #e5e5e5;
     margin: 0 auto;
-    
 }
 
 .the-text {
@@ -261,7 +259,6 @@ section {
     text-decoration: none;
     color: #c4161c;
 }
-
 .text {
     display: inline-block;
     width: 20%;
@@ -272,12 +269,10 @@ section {
     color: #000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .text:hover {
     text-decoration: none;
     color: #c4161c;
 }
-
 .news1 {
     margin-top: 20px;
 }
@@ -286,7 +281,10 @@ section {
     width: 100%;
     height: 100%;
 }
-
+.middle-showroom {
+    margin: 0 auto;
+    max-width: 150rem;
+}
 .main-showroom {
     position: relative;
     width: 100%;
@@ -299,10 +297,7 @@ section {
 .main-showroom h2 {
     font-weight: bold;
     color: #000;
-    margin: 0 auto;
-    width: 40%;
     font-size: 35px;
-    text-align: center;
     margin-top: 70px;
 }
 
@@ -341,152 +336,279 @@ section {
     padding-top: 10px;
 }
 
-/* Tin tuc trong nuoc */
-.tin-tuc {
-    width: 100%;
-    margin: 0 auto;
-}
-.tin-tuc-1 {
-    width: 100%;
-    /*background-color: red;*/
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-.tin-tuc-1 h2 {
-    position: absolute;
-    width: 40%;
-    text-align: left;
-    display: inline-block;
-    padding-top: 400px;
-    padding-left: 30px;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* hot-news.html desktop and mobile */
+@media  screen and (min-width: 840px) {
+     .hot-news {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 120rem;
+    }
+
+    .hot-news-top {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .hot-news-top h2 {
+        width: 40%;
+        position: absolute;
+        display: inline-block;
+        text-align: left;
+        padding-top: 400px;
+        padding-left: 30px;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .hot-news-top h2:hover {
+        color: #c4161c;
+    }
+
+    .hot-news-top img {
+       width: 70%;
+    }
+
+    .hot-news-middle {
+        width: 100%;
+        display: flex;
+        padding-bottom: 200px;
+    }
+
+    .first-hot-news-middle {
+        width: 50%;
+        height: auto;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .first-hot-news-middle img {
+        width: 70%;
+    }
+
+    .first-hot-news-middle h2 {
+        position: absolute;
+        display: inline-block;
+        width: 30%;
+        font-size: 20px;
+        text-align: left;
+        padding-top: 190px;
+        padding-left: 20px;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .first-hot-news-middle h2:hover {
+        color: #c4161c;
+    }
+
+    .second-hot-news-middle {
+        width: 50%;
+        
+        height: auto;
+        padding-left: 10px;
+    }
+
+    .second-hot-news-middle img {
+        width: 70%;
+    }
+
+    .second-hot-news-middle h2 {
+        position: absolute;
+        display: inline-block;
+        font-size: 20px;
+        color: #fff;
+        padding-top: 200px;
+        padding-left: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .second-hot-news-middle h2:hover {
+        color: #c4161c;
+    }
+
+    .hot-news-last {
+        
+        width: 71%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        box-sizing: border-box;   
+    }
+    .hot-news-last:last-child {
+        padding-bottom: 15rem;
+    }
+    .hot-news-last div {
+        width: 100%;
+        padding: 0.3rem;
+    }
+
+    .hot-news-last div img {
+        width: 95%;
+    }
+
+    .hot-news-last h3 {
+        text-align: left;
+        font-size: 15px;
+        font-weight: bold;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #tinh-yeu-2 {
+        display: none;
+    }
+
+    .hot-news-last h3 a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .hot-news-last h3 a:hover {
+        color: #c4161c;
+    }
+
+    .hot-news-last p {
+        text-align: left;
+        padding-top: 10px;
+        font-size: 10px;
+    }
+
+    .h2-news {
+        width: 71%;
+        margin: 0 auto;
+        font-size: 30px;
+        font-weight: bold;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 1rem;
+    }
+
+    .first-h2 {
+        margin: 0 auto;
+        font-size: 30px;
+        font-weight: bold;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 70%;
+        padding-top: 90px;
+    }
+
+    .hot-news-last div img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+
+    .hot-news-last div img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 }
 
-.tin-tuc-1 h2:hover {
-    color: #c4161c;
+@media only screen and (max-width: 840px) {
+    .hot-news {
+        text-align: center;
+    }
+
+    .hot-news img {
+        width: 95%;
+        padding-bottom: 1rem;
+    }
+
+    .hot-news-top h2 {
+        display: inline-block;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-bottom: 2rem;
+        color:#000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .first-h2 {
+        display: inline-block;
+        width: 95%;
+        text-align: left;
+        font-weight: bold;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    }
+    #tinh-yeu-1 {
+        display: none;
+    }
+
+    .first-h2 {
+        font-size: 1rem;
+    }
+    .h2-news {
+        display: inline-block;
+        padding-top: 5rem;
+        width: 95%;
+        text-align: left;
+    }
+    .hot-news-middle h2 {
+        font-size: 1.1rem;
+        width: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:#000;
+        display:inline-block;
+        font-weight: bold;
+        padding-bottom: 2rem;
+    }
+    .hot-news-last img {
+        width: 40%;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+    .hot-news-last img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .content-right {
+        display: inline-block;
+        width: 58%;
+        vertical-align: top;
+        padding-left: 0.9rem;
+        text-align: left;
+        padding-top: 0.2rem;
+    }
+    .content-right h3 {
+        font-size: 0.9rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serife;
+    }
+    .content-right h3 a {
+        color: #000;
+        text-decoration: none;
+    }
+    .content-right h3 a:hover {
+        color: #c4161c;
+    }
+    .content-right p {
+        font-size: 0.6rem;
+        margin-bottom: 0.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serife;
+    }
+    .hot-news-last:last-child {
+        padding-bottom: 13rem;
+    }
 }
-.tin-tuc-1 img {
-    width: 70%;
-}
-.tin-tuc-23 {
-    width: 100%;
-    display: flex;
-    padding-bottom: 200px;
-}
-.tin-tuc-2 {
-    width: 50%;
-    /*background-color: blue;*/
-    height: auto;
-    text-align: right;
-    padding-right: 10px;
-}
-.tin-tuc-2 img {
-    width: 70%;
-}
-.tin-tuc-2 h2 {
-    position: absolute;
-    display: inline-block;
-    width: 30%;
-    font-size: 20px;
-    text-align: left;
-    padding-top: 190px;
-    padding-left: 20px;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.tin-tuc-2 h2:hover {
-    color: #c4161c;
-}
-.tin-tuc-3 {
-    width: 50%;
-    /*background-color: yellow;*/
-    height: auto;
-    padding-left: 10px;
-}
-.tin-tuc-3 img {
-    width: 70%;
-}
-.tin-tuc-3 h2 {
-    position: absolute;
-    display: inline-block;
-    font-size: 20px;
-    color: #fff;
-    padding-top: 200px;
-    padding-left: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.tin-tuc-3 h2:hover {
-    color: #c4161c;
-}
-.tin-tuc-cuoi {
-    /*background-color: teal;*/
-    width: 71%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    box-sizing: border-box;
-}
-.tin-tuc-cuoi div {
-    width: 40%;
-    padding: 10px;
-}
-.tin-tuc-cuoi div img {
-    width: 100%;
-}
-.tin-tuc-cuoi h3 {
-    text-align: left;
-    font-size: 17px;
-    font-weight: bold;
-    color: #000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.tin-tuc-cuoi h3 a {
-    text-decoration: none;
-    color: #000;
-}
-.tin-tuc-cuoi h3 a:hover {
-    color: #c4161c;
-}
-.tin-tuc-cuoi p {
-    text-align: left;
-    padding-top: 10px;
-    font-size: 10px;
-}
-.h2-news {
-    width: 71%;
-    margin: 0 auto;
-    font-size: 30px;
-    font-weight: bold;
-    color: #000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-bottom: 30px;
-}
-.first-h2 {
-    margin: 0 auto;
-    font-size: 30px;
-    font-weight: bold;
-    color: #000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 70%;
-    padding-top: 90px;
-}
-.tin-tuc-cuoi div img {
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-    transition: 0.8s ease-in-out;
-    overflow: hidden;
-}
-.tin-tuc-cuoi div img:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
+
+
+
+
 /* CSS Footer */
-footer {
+/*footer {
     background-color: #f7f7f7;
     text-transform: none;
     width: 100%;
@@ -508,7 +630,7 @@ footer {
 
 .the-footer {
     /*width: 20%;*/
-    overflow: auto;
+   /* overflow: auto;
     padding: 50px;
 }
 
@@ -522,9 +644,75 @@ footer ul {
 .the-footer ul li a:hover {
     color: rgba(170, 32, 32, 0.5);
     text-decoration: none;
+}*/
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #cec5c54b;
+    text-transform: none;
+    padding: 1rem 11rem;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 0.9rem;
+    clear: both;
 }
 
-/*car.html css*/
+.footer-left {
+    display: flex;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.footer-left ul {
+    width: 20%;
+    border-right: 1px solid rgba(0,0,0,.2);
+    padding-left: 2rem;
+}
+
+.footer-left ul:last-child {
+    border-right: none;
+}
+
+.footer-left ul h5 {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #707070;
+}
+
+.footer-left ul li {
+    list-style-type: none;
+}
+
+.footer-left ul li a {
+    color: #000;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-left ul li a:hover {
+    text-decoration: none;
+    color: #c4161c;
+}
+
+#menu-content div {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#menu-content p {
+    font-size: 0.7rem;
+}
+
+#menu-content div li {
+    padding-right: 0.8rem;
+}
+
+#menu-content li a i {
+    font-size: 1.5rem;
+}
+
+/* car.html css */
 .tab {
     display: flex;
     flex-wrap: wrap;
