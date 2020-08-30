@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link href="LogoVinfast/favicon.png" rel="shortcut icon"/>
-        <title>VINFAST KHAI TRƯƠNG SHOWROOM TẠI PHẠM VĂN ĐỒNG</title>
+        <title>LUX A2.0</title>
         <link href="css/style.css" rel="stylesheet"/>
         <meta name="title" content="Mãnh liệt tinh thần Việt"/>
         <meta name="keywords" content="Vinfast, VietNam, Vingroup"/>
@@ -11,9 +11,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/f47b38a0e2.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            //Go to top button
+                $(document).ready(function () {
+                    $(window).scroll(function (){
+                        if($(this).scrollTop() > 100) {
+                        //Show and hide the button
+                            $('.goToTopButton').fadeIn();
+                        } else {
+                            $('.goToTopButton').fadeOut();
+                        }
+                    });
+                    //Smooth scrolling
+                        $('.goToTopButton').click(function() {
+                            $('html,body').animate({scrollTop: 0}, 2000)
+                        })
+                });
+        </script>
         <style>
         /* Make the image fully responsive */
         .carousel-inner img {
@@ -37,18 +56,19 @@
         </script>
     </head>
     <body>
+        <a href="#" class="goToTopButton"><i class="fas fa-angle-double-up"></i></a>
         <nav>
             <ul class="pc-nav">
                 <li class="child-nav"><a href="#">Sản phẩm <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
                     <ul>
-                        <li><a href="#">Ôtô Vinfast</a></li>
+                        <li><a href="car.html">Ôtô Vinfast</a></li>
                         <li><a href="#">Xe máy điện Vinfast</a></li>
                         <li><a href="#">Ôtô Chervolet</a></li>
                     </ul>
                 </li>
                 <li class="child-nav"><a href="#">Tin tức <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
                     <ul>
-                        <li><a href="#">Tin trong nước</a></li>
+                        <li><a href="hot-news.html">Tin nổi bật</a></li>
                         <li><a href="#">Tin nước ngoài</a></li>
                     </ul>
                 </li>
@@ -280,29 +300,41 @@
                 </div>
             </div>
         </section>
+        <!-- FOOTER -->
         <footer>
-            <div class="footer">
-                <div class="the-footer">
-                    <ul>
-                        <h5>Tin tức</h5>
-                        <li><a href="#">Tin tức trong nước</a></li>
-                        <li><a href="#">Tin tức ngoài nước</a></li>
-                    </ul>
-                </div>
-                <div class="the-footer">
-                    <ul>
-                        <h5>Contact Us</h5>
-                        <li><a href="tel: 1900 232289">1900 232289</a></li>
-                        <li><a href="mailto:cskh@vinfast.vn">cskh@vinfast.vn</a></li>
-                    </ul>
-                </div>
-                <div class="the-footer">
-                    <ul>
-                        <h5>Xe máy điện Vinfast</h5>
-                        <li><a href="#">Klara</a></li>
-                        <li><a href="#">Danh sách điểm bán</a></li>
-                    </ul>
-                </div>
+            <div class="footer-left">
+                <ul>
+                    <h5>Liên hệ</h5>
+                    <li><a href="tel: 1900 232289">1900 232389</a></li>
+                    <li><a href="mailto:cskh@vinfast.vn">cskh@vinfast.vn</a></li>
+                </ul>
+                <ul>
+                    <h5>Tin Tức</h5>
+                    <li><a href="hot-news.html">Tin nổi bật</a></li>
+                    <li><a href="#">Tin nước ngoài</a></li>
+                </ul>
+                <ul>
+                    <h5>Xe Ô Tô VinFast</h5>
+                    <li><a href="lux-a2.html">Lux A2.0</a></li>
+                    <li><a href="#">Lux SA2.0</a></li>
+                    <li><a href="#">Fadil</a></li>
+                    <li><a href="#">Danh sách điểm bán</a></li>
+                </ul>
+                <ul>
+                    <h5>Xe Máy Điện VinFast</h5>
+                    <li><a href="#">Klara</a></li>
+                    <li><a href="#">Danh sách điểm bán</a></li>
+                </ul>
+                <ul id="menu-content">
+                    <h5>Mạng xã hội</h5>
+                    <div>
+                        <li><a href="https://www.facebook.com/VinFastAuto.Official/?ref=bookmarks"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/vinfastofficial/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCA5OijDHvvWJ3vy5iVdWcAQ"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://twitter.com/vinfastofficial"><i class="fab fa-twitter"></i></a></li>
+                    </div>
+                    <p>VinFast. All rights reserved. <br> &copy; Copyright 2018</p>
+                </ul>
             </div>
         </footer>
     </body>

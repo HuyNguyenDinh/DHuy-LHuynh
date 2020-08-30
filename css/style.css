@@ -5,7 +5,61 @@
 nav .mb-nav {
     display: none;
 }
+/* go top top button */
+.goToTopButton {
+    position: fixed;
+    bottom: 15rem;
+    right: 2rem;
+    width: 2rem;
+    max-width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background: red;
+    color: white;
+    display: none;
+}
 
+.goToTopButton:hover {
+    color: black;
+}
+
+.goToTopButtonNewsHTML  {
+    position: fixed;
+    bottom: 15rem;
+    right: 2rem;
+    width: 2rem;
+    max-width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background: red;
+    color: white;
+    display: none;
+}
+
+.goToTopButtonNewsHTML:hover {
+    color: black;
+}
+
+.goToTopButtonHotNews  {
+    position: fixed;
+    bottom: 15rem;
+    right: 2rem;
+    width: 2rem;
+    max-width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background: red;
+    color: white;
+    display: none;
+}
+
+.goToTopButtonHotNews:hover {
+    color: black;
+}
+/*    */
 @media only screen and (max-width: 840px) {
     nav .pc-nav {
         display: none;
@@ -111,6 +165,14 @@ section {
     padding: 30px;
 }*/
 
+.show {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 100rem;
+}
+
 .product img {
     width: 100%;
 }
@@ -126,37 +188,44 @@ section {
 }
 
 .car h4, .moto h4 {
-    font-weight: bolder;
-    font-size: large;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 20px;
+    padding-left: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 2.0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
 }
-
+.maydien {
+    padding-top: 8rem;
+}
 .car, .moto {
-    padding: 0px 50px;
+   padding: 0 7rem;
 }
 
 .cars, .motos {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     align-items: center;
     justify-content: space-between;
     overflow: auto;
     padding: 50px;
-    border-bottom: 2px solid gray;
+    /*border-bottom: 1px solid gray;*/
 }
 
 .cars div, .motos div {
-    padding: 30px;
+    /*padding: 30px;*/
     width: 32%;
     opacity: 0.9;
-    transition: ease 0.3s;
+    transition: ease 0.8s;
 }
-
+.cars div a, .motos div a {
+    color: #000;
+}
 .cars div:hover, .motos div:hover {
     opacity: 1;
-    transform: scale(1.1)
+    transform: scale(1.1);
+    color: #c4161c;
 }
 
 .cars figcaption, .motos figcaption {
@@ -173,120 +242,210 @@ section {
     width: 100%;
     margin: 0 auto;
     padding: 50px;
-    position: relative;
+    /*position: relative;*/
 }
 
 /* CSS News */
-.news {
-    width: 100%;
-    height: 55rem;
-    margin: 0 auto;
-    padding: 50px;
-    position: relative;
-    max-width: 120rem;
+@media  screen and (min-width: 840px) {
+    .news {
+        width: 100%;
+        height: 55rem;
+        margin: 0 auto;
+        padding: 1rem;
+        max-width: 100rem;
+    }
+    
+    .news-left div figure img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+    
+    .news-left div figure img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    .news-right img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+    
+    .news-right img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    .news-left {
+        width: 50%;
+        float: left;
+        height: auto;
+        padding-left: 10rem;
+    }
+    
+    .news-right {
+        height: auto;
+     }
+    
+     .news .news-left img {
+        width: 90%;
+        height: auto;
+        padding-top: 30px;
+        overflow: hidden;
+    }
+    
+    .news .news-right img {
+        width: 15%;
+        padding-top: 30px;
+    }
+    
+    .main-news {
+        padding-left: 5rem;
+        margin-bottom: 10px;
+        padding-top: 10rem;
+        font-weight: bold;
+        width: 90%;
+        letter-spacing: 2px;
+        font-size: 2.0rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0 auto;
+    }
+    
+    .the-text {
+        display: inline-block;
+        width: 90%;
+        padding-top: 0.8rem;
+        font-size: 1.5rem;
+        color: #000000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .the-text:hover {
+        text-decoration: none;
+        color: #c4161c;
+    }
+
+    .text {
+        display: inline-block;
+        width: 20%;
+        vertical-align: top;
+        padding-top: 30px;
+        padding-left: 20px;
+        font-size: 18px;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .text:hover {
+        text-decoration: none;
+        color: #c4161c;
+    }
+
+    .news1 {
+        margin-top: 20px;
+    }
+}
+@media  screen and (max-width: 840px) {
+    .news {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 100rem;
+    }
+
+    .main-news {
+        text-align: left;
+        display: inline-block;
+        width: 75%;
+        font-size: 1.8rem;
+        padding-top: 2rem;
+        padding-bottom: 0.8rem;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .news img {
+        width: 75%;
+    }
+
+    .text {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.2rem;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-top: 0.8rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .the-text {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.2rem;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-top: 0.8rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .the-text:hover {
+        text-decoration: none;
+        color: #c4161c;
+    }
+
+    .news-right a:hover {
+        text-decoration: none;
+        color: #c4161c;
+    }
+
+    #text-1:last-child {
+        padding-bottom: 7rem;
+    }
+
+    .news-left div figure img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+    
+    .news-left div figure img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    .news-right img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+    
+    .news-right img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 }
 
-.news-left div figure img {
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-    transition: 0.8s ease-in-out;
-    overflow: hidden;
-}
-
-.news-left div figure img:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.news-right img {
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-    transition: 0.8s ease-in-out;
-    overflow: hidden;
-}
-
-.news-right img:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.news-left {
-    width: 50%;
-    float: left;
-    height: auto;
-    padding-left: 100px;
-}
-
-.news-right {
-    height: auto;
- }
-
- .news .news-left img {
-    width: 90%;
-    height: auto;
-    padding-top: 30px;
-    overflow: hidden;
-}
-
-.news .news-right img {
-    width: 15%;
-    padding-top: 30px;
-}
-
-.main-news {
-    padding-left: 30px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    font-weight: bold;
-    width: 90%;
-    letter-spacing: 2px;
-    font-size: 2.0rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-bottom: 2px solid #e5e5e5;
-    margin: 0 auto;
-}
-
-.the-text {
-    display: inline-block;
-    padding-top: 10px;
-    font-size: 30px;
-    color: #000000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.the-text:hover {
-    text-decoration: none;
-    color: #c4161c;
-}
-.text {
-    display: inline-block;
-    width: 20%;
-    vertical-align: top;
-    padding-top: 30px;
-    padding-left: 20px;
-    font-size: 18px;
-    color: #000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.text:hover {
-    text-decoration: none;
-    color: #c4161c;
-}
-.news1 {
-    margin-top: 20px;
-}
-/* ShowRoom */
+/* news.html */
 .imgshowroom img {
     width: 100%;
     height: 100%;
 }
+
 .middle-showroom {
     margin: 0 auto;
-    max-width: 150rem;
+    max-width: 50rem;
 }
+
 .main-showroom {
-    position: relative;
     width: 100%;
     height: auto;
     text-align: center;
@@ -297,8 +456,8 @@ section {
 .main-showroom h2 {
     font-weight: bold;
     color: #000;
-    font-size: 35px;
-    margin-top: 70px;
+    font-size: 2rem;
+    margin-top: 3rem;
 }
 
 .main-showroom p {
@@ -313,9 +472,10 @@ section {
 }
 
 .middle-showroom p {
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
 }
 
 .link {
@@ -341,7 +501,7 @@ section {
      .hot-news {
         width: 100%;
         margin: 0 auto;
-        max-width: 120rem;
+        max-width: 100rem;
     }
 
     .hot-news-top {
@@ -514,6 +674,8 @@ section {
 @media only screen and (max-width: 840px) {
     .hot-news {
         text-align: center;
+        margin: 0 auto;
+        max-width: 100rem;
     }
 
     .hot-news img {
@@ -609,7 +771,7 @@ footer {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    background-color: #cec5c54b;
+    background-color: #e9e0e02a;
     text-transform: none;
     padding: 1rem 11rem;
     box-sizing: border-box;
@@ -620,7 +782,7 @@ footer {
 
 .footer-left {
     display: flex;
-    max-width: 100rem;
+    max-width: 80rem;
     margin: 0 auto;
 }
 
@@ -686,7 +848,7 @@ footer {
 }
 
 .tab div:hover {
-    border: 1px solid grey;
+    
     border-radius: 5%;
 }
 

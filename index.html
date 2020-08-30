@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"/>
-        <link href="LogoVinfast/favicon.png" rel="shortcut icon"/>
         <title>Vinfast</title>
+        <meta charset="utf-8"/>
         <meta name="title" content="Mãnh liệt tinh thần Việt"/>
         <meta name="keywords" content="Vinfast, VietNam, Vingroup"/>
-        <script src="https://kit.fontawesome.com/f47b38a0e2.js" crossorigin="anonymous"></script>
-        <meta name="description" content="Trang giới thiệu sản phẩm Vinfast và doanh nghiệp"/>
-        <link href="css/style.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Trang giới thiệu sản phẩm Vinfast và doanh nghiệp"/>
+        <link href="LogoVinfast/favicon.png" rel="shortcut icon"/>
+        <link href="css/style.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js.js"></script>
+        <script src="https://kit.fontawesome.com/f47b38a0e2.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            //Go to top button
+                $(document).ready(function () {
+                    $(window).scroll(function (){
+                        if($(this).scrollTop() > 100) {
+                        //Show and hide the button
+                            $('.goToTopButton').fadeIn();
+                        } else {
+                            $('.goToTopButton').fadeOut();
+                        }
+                    });
+                    //Smooth scrolling
+                        $('.goToTopButton').click(function() {
+                            $('html,body').animate({scrollTop: 0}, 2000)
+                        })
+                });
+        </script>
         <style>
         /* Make the image fully responsive */
         .carousel-inner img {
@@ -24,6 +43,7 @@
         </style>
     </head>
     <body>
+        <a href="#" class="goToTopButton"><i class="fas fa-angle-double-up"></i></a>
         <nav>
             <ul class="pc-nav">
                 <li class="child-nav"><a href="#">Sản phẩm <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
@@ -35,7 +55,7 @@
                 </li>
                 <li class="child-nav"><a href="#">Tin tức <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
                     <ul>
-                        <li><a href="#">Tin trong nước</a></li>
+                        <li><a href="hot-news.html">Tin nổi bật</a></li>
                         <li><a href="#">Tin nước ngoài</a></li>
                     </ul>
                 </li>
@@ -135,18 +155,18 @@
         </header>
 
         <section class="product">
-            <h3 class="main-news">Sản phẩm</h3>
+            <!--<h3 class="main-news">Sản phẩm</h3>-->
             <div class="show">
                 <div class="car">
-                    <a href="car.html"><h4>Xe ô tô</h4></a>
+                    <h4>Xe ô tô</h4>
                     <div class="cars">
                             <div><a href="#"><figure><img src="LogoVinfast/Product/sa2-banner.jpg"/><figcaption>Lux SA 2.0</figcaption></figure></a></div>
-                            <div><a href="#"><figure><img src="LogoVinfast/Product/a2-banner.jpg"/><figcaption>Lux A 2.0</figcaption></figure></a></div>
+                            <div><a href="lux-a2.html"><figure><img src="LogoVinfast/Product/a2-banner.jpg"/><figcaption>Lux A 2.0</figcaption></figure></a></div>
                             <div><a href="#"><figure><img src="LogoVinfast/Product/fadil-banner.jpg"/><figcaption>Fadil</figcaption></figure></a></div>
                     </div>
                 </div>
                 <div class="moto">
-                    <a href="#"><h4>Xe máy điện</h4></a>
+                    <h4 class="maydien">Xe máy điện</h4>
                     <div class="motos">
                             <div><a href="#"><figure><img src="LogoVinfast/Product/klara-banner.jpg" style="background-color: gray;"/><figcaption>Klara</figcaption></figure></a></div>
                             <div><a href="#"><figure><img src="LogoVinfast/Product/ludo-banner.jpg"/><figcaption>Ludo</figcaption></figure></a></div>
@@ -174,7 +194,7 @@
                         </div>
                         <div>
                             <a class="news1" href="#"><img src="LogoVinfast/News3.jpg"></a>
-                            <a class="text" href="#">THÔNG BÁO CHÍNH SÁCH “VẠN QUÀ TRI ÂN - TIN YÊU LAN TỎA”</a>
+                            <a class="text" id="text-1" href="#">THÔNG BÁO CHÍNH SÁCH “VẠN QUÀ TRI ÂN - TIN YÊU LAN TỎA</a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +214,7 @@
                 </ul>
                 <ul>
                     <h5>Xe Ô Tô VinFast</h5>
-                    <li><a href="#">Lux A2.0</a></li>
+                    <li><a href="lux-a2.html">Lux A2.0</a></li>
                     <li><a href="#">Lux SA2.0</a></li>
                     <li><a href="#">Fadil</a></li>
                     <li><a href="#">Danh sách điểm bán</a></li>
