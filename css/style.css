@@ -442,7 +442,7 @@ section {
 
 .middle-showroom {
     margin: 0 auto;
-    max-width: 50rem;
+    max-width: 110rem;
 }
 
 .main-showroom {
@@ -501,11 +501,12 @@ section {
      .hot-news {
         width: 100%;
         margin: 0 auto;
-        max-width: 100rem;
+        /*max-width: 100rem;*/
+        text-decoration: none;
     }
 
     .hot-news-top {
-        width: 100%;
+        width: 70%;
         height: auto;
         margin: 0 auto;
         text-align: center;
@@ -514,85 +515,50 @@ section {
     }
 
     .hot-news-top h2 {
-        width: 40%;
-        position: absolute;
-        display: inline-block;
-        text-align: left;
-        padding-top: 400px;
-        padding-left: 30px;
-        color: #fff;
+        text-align: center;
+        color:#000;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
-    .hot-news-top h2:hover {
-        color: #c4161c;
+    .hot-news a:hover {
+        text-decoration: none;
     }
 
-    .hot-news-top img {
-       width: 70%;
+    .hot-news a:hover h2 {
+        color: red;
     }
 
     .hot-news-middle {
-        width: 100%;
+        width: 70%;
+        margin: 0 auto;
         display: flex;
         padding-bottom: 200px;
     }
 
-    .first-hot-news-middle {
-        width: 50%;
+    .hot-news-top img, .first-hot-news-middle, .second-hot-news-middle {
+        width: 100%;
         height: auto;
         text-align: right;
         padding-right: 10px;
     }
 
-    .first-hot-news-middle img {
-        width: 70%;
+    .first-hot-news-middle img, .second-hot-news-middle img {
+        width: 100%;
     }
 
-    .first-hot-news-middle h2 {
-        position: absolute;
-        display: inline-block;
-        width: 30%;
+    .first-hot-news-middle h2, .second-hot-news-middle h2 {
         font-size: 20px;
-        text-align: left;
-        padding-top: 190px;
-        padding-left: 20px;
-        color: #fff;
+        text-align: center;
+        color: #000;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .first-hot-news-middle h2:hover {
-        color: #c4161c;
     }
 
     .second-hot-news-middle {
-        width: 50%;
-        
-        height: auto;
         padding-left: 10px;
     }
 
-    .second-hot-news-middle img {
-        width: 70%;
-    }
-
-    .second-hot-news-middle h2 {
-        position: absolute;
-        display: inline-block;
-        font-size: 20px;
-        color: #fff;
-        padding-top: 200px;
-        padding-left: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .second-hot-news-middle h2:hover {
-        color: #c4161c;
-    }
-
     .hot-news-last {
-        
-        width: 71%;
+        width: 70%;
         height: auto;
         margin: 0 auto;
         display: flex;
@@ -616,10 +582,6 @@ section {
         font-weight: bold;
         color: #000;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    #tinh-yeu-2 {
-        display: none;
     }
 
     .hot-news-last h3 a {
@@ -658,8 +620,6 @@ section {
     }
 
     .hot-news-last div img {
-        -webkit-transform: scale(1);
-        transform: scale(1);
         -webkit-transition: .3s ease-in-out;
         transition: 0.8s ease-in-out;
         overflow: hidden;
@@ -688,7 +648,6 @@ section {
         font-size: 1.1rem;
         font-weight: bold;
         padding-bottom: 2rem;
-        color:#000;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
@@ -700,9 +659,6 @@ section {
         padding-top: 3rem;
         padding-bottom: 1rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
-    }
-    #tinh-yeu-1 {
-        display: none;
     }
 
     .first-h2 {
@@ -727,8 +683,6 @@ section {
         width: 40%;
         padding-left: 1rem;
         padding-bottom: 1rem;
-        -webkit-transform: scale(1);
-        transform: scale(1);
         -webkit-transition: .3s ease-in-out;
         transition: 0.8s ease-in-out;
         overflow: hidden;
@@ -848,8 +802,7 @@ footer {
 }
 
 .tab div:hover {
-    
-    border-radius: 5%;
+    outline: 5px solid lightgray;
 }
 
 .tab div img {
@@ -900,7 +853,6 @@ footer {
 .imag .main-imag {
     width: 100%;
 }
-
 
 .imag .thumb {
     display: flex;
@@ -981,6 +933,7 @@ footer {
 
 .bot h3 {
     text-align: center;
+    color: green;
 }
 
 .ex {
