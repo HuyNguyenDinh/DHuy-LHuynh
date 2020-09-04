@@ -31,7 +31,24 @@
                     //Smooth scrolling
                         $('.goToTopButton').click(function() {
                             $('html,body').animate({scrollTop: 0}, 2000)
-                        })
+                        });
+                    //Contact
+                    $('#sendContact').click(function() {
+                        var l = document.getElementsByClassName('contacts');
+                        var checks = true;
+                        for (var i of l) {
+                            if(i.value == "") {
+                                $(i).css("outline", "1px solid red")
+                                checks = false;
+                            }
+                            else {
+                                $(i).css("outline", "none")
+                            }
+                        }
+                        if(checks == true) {
+                            alert("Thông tin sản phẩm đã gửi qua email của bạn. Vui lòng kiểm tra email của bạn");
+                        }
+                    });
                 });
         </script>
         <style>
@@ -46,6 +63,7 @@
         <a href="#" class="goToTopButton"><i class="fas fa-angle-double-up"></i></a>
         <nav>
             <ul class="pc-nav">
+                <li><a href="index.html"><i class="fas fa-home"></i> </a></li>
                 <li class="child-nav"><a href="#">Sản phẩm <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
                     <ul>
                         <li><a href="car.html">Ôtô Vinfast</a></li>
@@ -59,7 +77,6 @@
                         <li><a href="#">Tin nước ngoài</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Liên hệ</a></li>
                 <li><img class="logoVinFast" src="LogoVinfast/logoEdit.png" alt="Logo"></li>
                 <li><a href="#">Hệ thống phân phối</a></li>
                 <li><a href="#">Về chúng tôi</a></li>
@@ -199,6 +216,46 @@
                     </div>
                 </div>
             </article>
+        <section style="background-color: black; color: white;">
+            <h3 class="main-news" style="color:white">Liên hệ</h3>
+            <form>
+                <table>
+                    <tr>
+                        <td>Họ và tên</td>
+                        <td><input type="text" placeholder="Nguyễn Văn A" class="contacts"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" placeholder="ABCXYZ@email.abc" class="contacts"></td>
+                    </tr>
+                    <tr>
+                        <td>Số điện thoại</td>
+                        <td><input type="text" placeholder="012345678" class="contacts"></td>
+                    </tr>
+                    <tr>
+                        <td>Lux SA 2.0</td>
+                        <td><input type="checkbox" checked="checked"/></td>
+                    </tr>
+                    <tr>
+                        <td>Lux A 2.0</td>
+                        <td><input type="checkbox"/></td>
+                    </tr>
+                    <tr>
+                        <td>Fadil</td>
+                        <td><input type="checkbox"/></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" id="respond"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><input type="button" value="Nhận thông tin sản phẩm" id="sendContact"></td>
+                    </tr>
+                    
+                </table>
+            </form>
+        </section>
         <!-- FOOTER -->
         <footer>
             <div class="footer-left">
