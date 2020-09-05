@@ -701,8 +701,9 @@ section {
         text-align: left;
         font-weight: bold;
         padding-top: 3rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+        font-size: 2rem !important;
     }
 
     .first-h2 {
@@ -986,31 +987,88 @@ footer {
 }
 
 /*Contact index.html*/
-form {
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-form table {
-    width: 100%;
+@media screen and (min-width: 800px) {
+    .ok {
+        padding-left: 3.5rem;
+        padding-bottom: 3rem;
+        padding-top: 10rem;
+        font-weight: bold;
+        width: 75%;
+        letter-spacing: 2px;
+        font-size: 2.0rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0 auto;
+    }
+    form {
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    form table {
+        width: 100%;
+    }
+    
+    form table tr td {
+        padding: 10px
+    }
+    
+    form table tr td:last-child {
+        width: 70%;
+    }
+    
+    form input {
+        width: 100%;
+    }
+    
+    form table tr:last-child > td input {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        padding: 10px;
+    }
 }
-
-form table tr td {
-    padding: 10px
-}
-
-form table tr td:last-child {
-    width: 70%;
-}
-
-form input {
-    width: 100%;
-}
-
-form table tr:last-child > td input {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    padding: 10px;
+@media screen and (max-width:800px) {
+    .ok {
+        padding-left: 1.2rem;
+        padding-bottom: 3rem;
+        padding-top: 10rem;
+        font-weight: bold;
+        width: 90%;
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0 auto;
+    }
+    form {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    table tr td {
+        font-size: 0.7rem;
+    }
+    form table {
+        width: 100%;
+    }
+    
+    form table tr td {
+       padding: 5px
+    }
+    
+    form table tr td:last-child {
+        width: 70%;
+    }
+    
+    form input {
+        width: 90%;
+    }
+    
+    form table tr:last-child > td input {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        padding: 10px;
+    }
 }
