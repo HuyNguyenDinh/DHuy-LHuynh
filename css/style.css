@@ -522,6 +522,10 @@ section {
     text-align: justify;
 }
 
+.middle-showroom h4 {
+    padding: 10px;
+}
+
 .link {
     font-style: italic;
     padding-bottom: 70px;
