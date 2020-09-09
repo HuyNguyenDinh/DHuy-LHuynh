@@ -1129,8 +1129,8 @@ footer ul li a:hover {
     
     .description h3 {
         text-align: center;
-        background-color: lightblue;
-        color: red;
+        background-color: black;
+        color: white;
         padding: 24px 26px;
         font-weight: bolder;
     }
@@ -1163,10 +1163,10 @@ footer ul li a:hover {
         width: 20%;
         padding: 14px 16px; 
         text-align: center;
-        background-color: lightblue;
+        background-color: black;
         border: none;
         outline: none;
-        color: red;
+        color: white;
         transition: ease 0.2s;
     }
     
@@ -1176,11 +1176,11 @@ footer ul li a:hover {
     }
     
     .but .but1:hover {
-        background-color: lightskyblue;
+        background-color: green;
     }
     
     .but .but1:first-child {
-        background-color: lightskyblue;
+        background-color: green;
     }
     
     .bot h3 {
@@ -1237,8 +1237,8 @@ footer ul li a:hover {
     }
     
     .description h3 {
-        background-color: lightblue;
-        color: red;
+        background-color: black;
+        color: white;
         text-align: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -1281,10 +1281,10 @@ footer ul li a:hover {
         margin-right: 0;
         padding-right: 0;
         padding-left: 0;
-        background-color: lightblue;
+        background-color: black;
         border: none;
         outline: none;
-        color: red;
+        color: white;
         transition: ease 0.2s;
     }
     
@@ -1294,11 +1294,11 @@ footer ul li a:hover {
     }
     
     .but .but1:hover {
-        background-color: lightskyblue;
+        background-color: green;
     }
     
     .but .but1:first-child {
-        background-color: lightskyblue;
+        background-color: green;
     }
     
     .bot h3 {
@@ -1395,5 +1395,16 @@ footer ul li a:hover {
         margin: 0 auto;
         width: 90%;
         padding: 10px;
+    }
+}
+
+
+.carousel-inner {
+    margin-top: 52px !important;
+}
+
+@media only screen and (max-width: 840px) {
+    .carousel-inner {
+        margin-top: 45px !important;
     }
 }
