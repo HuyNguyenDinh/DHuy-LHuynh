@@ -75,6 +75,7 @@ nav .mb-nav {
     .modal-body a {
         color: black !important;
         text-decoration: none !important;
+        text-align: left;
     }
 
     .modal-body ul {
@@ -83,7 +84,7 @@ nav .mb-nav {
     }
 
     .modal-body ul li {
-        padding: 0px 50px;
+        padding: 0px 20px;
     }
 
     /*fixed modal-fade z-index*/
@@ -1227,10 +1228,7 @@ footer ul li a:hover {
         padding: 1%;
         margin: 2%;
         border: 1px solid gray;
-    }
-    .imag .thumb .thumbnail:hover {
-        /*border: 1px solid green;*/
-    }
+    }}
     .description {
         width: 95%;
         margin: 0 auto;
